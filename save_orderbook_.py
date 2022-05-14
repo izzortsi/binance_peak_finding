@@ -8,10 +8,10 @@ import time
 # import json
 import jsonlines as jl
 import os
-from binance import ThreadedWebsocketManager
 
-api_key = 'api_key'
-api_secret = 'api_secret'
+
+api_key = os.environ.get("API_KEY")
+api_secret = os.environ.get("API_SECRET")
 
 # %%
 symbol = "ETHUSDT"
